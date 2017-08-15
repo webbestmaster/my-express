@@ -1,0 +1,23 @@
+<% include partials/header.ejs %>
+<h1>
+    Hello from ejs!!
+</h1>
+
+<h2><%= title %></h2>
+<h2><%= locals.someVariable %></h2>
+
+<h2>add customer</h2>
+
+<form method="post" action="/users/add">
+    <input type="text" placeholder="name" name="name"><br>
+    <input type="text" placeholder="last name" name="last name"><br>
+    <input type="text" placeholder="email" name="email"><br>
+    <input type="submit" value="submit">
+</form>
+
+<% users.forEach(user => { %>
+    <%= JSON.stringify(user) %>
+<% }); %>
+
+
+<% include partials/footer.ejs %>

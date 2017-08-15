@@ -1,0 +1,31 @@
+{
+  "name": "my-express",
+  "version": "1.0.0",
+  "description": "simple app",
+  "main": "app.js",
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webbestmaster/my-express.git"
+  },
+  "author": "My name))",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webbestmaster/my-express/issues"
+  },
+  "homepage": "https://github.com/webbestmaster/my-express#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "eslint": "^4.3.0",
+    "nodemon": "^1.11.0"
+  }
+}
